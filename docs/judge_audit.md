@@ -11,11 +11,11 @@ FAIL là lớp dương. Chạy replay CSV bằng python -m lab9.judge.
 
 | Case | Human | Judge | Xử lý rubric |
 |---|---|---|---|
-| H-008 | FAIL | PASS | Giữ nhãn human; câu “anh check giúp em” quá suồng sã. |
-| H-017 | FAIL | PASS | Giữ nhãn human; “bạn ơi”, “nha” không phù hợp thông báo hoàn tiền. |
-| H-029 | FAIL | PASS | Giữ nhãn human; yêu cầu khách không nhắn thêm là thiếu lịch sự. |
-| H-042 | PASS | FAIL | Giữ nhãn human; thông báo thời gian nhận tiền vẫn đúng tone. |
-| H-051 | PASS | FAIL | Giữ nhãn human; từ “refund” chưa đủ để kết luận tone xấu. |
-| HL-015 | FAIL | PASS | Giữ nhãn human; helpful judge bỏ sót thiếu thông tin hành động tiếp theo. |
+| H-008 | FAIL | PASS | Human đúng; thêm ví dụ “anh check giúp em” vào nhóm suồng sã của rubric. |
+| H-017 | FAIL | PASS | Human đúng; quy định “bạn ơi”, “nha” không phù hợp thông báo hoàn tiền. |
+| H-029 | FAIL | PASS | Human đúng; thêm quy tắc cấm yêu cầu khách ngừng liên hệ. |
+| H-042 | PASS | FAIL | Human đúng; nêu rõ thông báo thời gian tiền về là trung tính về tone. |
+| H-051 | PASS | FAIL | Human đúng; cho phép từ “refund” nếu câu vẫn lịch sự và rõ nghĩa. |
+| HL-015 | FAIL | PASS | Human đúng; thêm tiêu chí helpful phải có thông tin hành động tiếp theo. |
 
 Tone judge có thể giám sát ngôn ngữ, nhưng không chấm tiền hay approval. Helpful judge bỏ sót 21/30 lỗi, nên loại khỏi gate. Rogan–Gladen điều chỉnh tỷ lệ FAIL quan sát 0.28 thành 0.30 cho tone, 0.09 thành 0.30 cho helpful. Đây là replay công khai, chưa có held-out.
